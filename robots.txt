@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://parkminjae-5900.github.io/sitemap.xml
+Sitemap: https://www.dahamsangjo.co.kr/sitemap.xml
