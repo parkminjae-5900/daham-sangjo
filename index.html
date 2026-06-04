@@ -383,5 +383,23 @@ window.addEventListener('load',()=>{const hash=location.hash.replace('#','');if(
     }
 }
 </style>
+  <script>
+const heroImages = [
+  'gallery7.jpg',
+  'gallery8.jpg',
+  'gallery9.jpg',
+  'gallery10.jpg'
+];
+
+let heroIndex = 0;
+
+setInterval(() => {
+  heroIndex = (heroIndex + 1) % heroImages.length;
+  const heroBg = document.querySelector('.hero-photo-bg');
+  if (heroBg) {
+    heroBg.style.backgroundImage = `url('${heroImages[heroIndex]}')`;
+  }
+}, 5000);
+</script>
 </body>
 </html>
