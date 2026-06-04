@@ -352,5 +352,36 @@ function showProduct(name){document.body.classList.add('hide-main');hideAllDetai
 function showHome(){document.body.classList.remove('hide-main');hideAllDetails();history.replaceState(null,'',location.pathname);setTimeout(()=>window.scrollTo({top:0,behavior:'smooth'}),20);}
 window.addEventListener('load',()=>{const hash=location.hash.replace('#','');if(['moobinso','family','standard','premium'].includes(hash)){showProduct(hash);}});
 </script>
+  <div class="mobile-call">
+    <a href="tel:16006131">📞 24시간 장례접수 1600-6131</a>
+</div>
+
+<style>
+.mobile-call{
+    display:none;
+}
+
+@media(max-width:768px){
+    .mobile-call{
+        display:block;
+        position:fixed;
+        bottom:0;
+        left:0;
+        width:100%;
+        z-index:9999;
+    }
+
+    .mobile-call a{
+        display:block;
+        text-align:center;
+        background:#d9a441;
+        color:#fff;
+        font-size:18px;
+        font-weight:bold;
+        padding:16px;
+        text-decoration:none;
+    }
+}
+</style>
 </body>
 </html>
